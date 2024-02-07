@@ -11,6 +11,20 @@ fs.writeFile(filePath, firstContent, (err) => {
         console.error('Error writing to file:', err);
         return;
     }
-
+    appendTOFile() 
     console.log('Content written to file successfully.');
 });
+function appendTOFile(Content) {
+    try {
+        fs.appendFile(filePath,firstContent, callback=>
+            {
+             if (!callback) {
+                console.log('data has been modified.');
+             }   
+            })
+    } catch (error) {
+        console.log('Issue when appending data to a file');
+    }
+   
+}
+appendTOFile() 
