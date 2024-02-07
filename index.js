@@ -1,6 +1,6 @@
 // Task_1_Zukisa_Maza
 const http = require('http');
-const dataProcessor = require('./dataProcessor');
+const dataProcessor = require('./data/dataProcessor');
 
 // Creating an HTTP server
 const server = http.createServer((req, res) => {
